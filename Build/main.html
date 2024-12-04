@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="billing-container">
+        <div class="header" id="billing-header">💲Billing Details</div>
+        <input type="number" id="player-id" placeholder="🔹 Enter Player ID" min="1">
+        <input type="number" id="amount" placeholder="💵 Enter Amount" min="1">
+        <button class="btn submit" id="submit-btn">🚀 Submit</button>
+    </div>
+    
+    <div class="container" id="payment-container" style="display: none;">
+        <div class="header">💰 Payment Options</div>
+        <div id="player-info" style="font-size: 18px; color: #dedede;">Player Information: N/A</div>
+        <button class="btn pay-cash" id="pay-cash">💸 Pay with Cash</button>
+        <button class="btn pay-bank" id="pay-bank">🏦 Pay with Bank</button>
+        <button class="btn close" id="close-btn">✖ Close Billing Menu</button>
+    </div>      
+
+    <script src="script.js"></script>
+</body>
+
+</html>

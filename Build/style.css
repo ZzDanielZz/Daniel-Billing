@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background: radial-gradient(circle at center, #101016, #05050a); */
+    /* animation: backgroundPulse 8s infinite; */
+    overflow: hidden;
+}
+
+@keyframes backgroundPulse {
+    0% { background-color: #0d0d1f; }
+    50% { background-color: #1a1a3f; }
+    100% { background-color: #0d0d1f; }
+}
+
+/* Container */
+.container {
+    background: linear-gradient(45deg, #141418, #28282b);
+    padding: 110px;
+    border-radius: 31px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 584px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+    display: none;
+    overflow: hidden;
+}
+
+.container.active {
+    display: block;
+}
+
+.container.fade-out {
+    animation: fadeOut 0.6s ease-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Header */
+.header {
+    font-size: 28px;
+    /* margin-bottom: 15px; */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.5px;
+    overflow: hidden;
+}
+
+/* Input Fields */
+input {
+    overflow: hidden;
+    text-align: center;
+    width: calc(100% - 30px);
+    padding: 12px;
+    margin: 10px 0;
+    color: white;
+    background-color: #222;
+    border: 1px solid #555;
+    border-radius: 8px;
+    /* color: #00e1ff; */
+    font-size: 17.4px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 70%);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #cacdcdec;
+    outline: none;
+    box-shadow: 0 0 20px rgb(255 255 255 / 70%);
+    overflow: hidden;
+}
+
+/* Buttons */
+.btn {
+    text-align: -webkit-center;
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, #f7f6f6, #506c76);
+    box-shadow: 0 4px 15px rgb(0 0 0 / 30%), 0 0 10px #ffffff;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #f7f6f6, #506c76);
+    box-shadow: 0 4px 15px rgb(0 0 0 / 30%), 0 0 10px #ffffff;
+    overflow: hidden;
+}
+
+/* Additional Button Styling */
+.pay-cash {
+    background: linear-gradient(90deg, #00e13d8c, #007a1ef2);
+}
+
+.pay-cash:hover {
+    background: linear-gradient(90deg, #007a1ef2, #00e13d8c);
+}
+
+.pay-bank {
+    background: linear-gradient(90deg, #2196F3, #1e87d1);
+}
+
+.pay-bank:hover {
+    background: linear-gradient(90deg, #1e87d1, #2196F3);
+}
+
+.close {
+    background: linear-gradient(90deg, #b0003ac7, #e91e63e0);
+}
+
+.close:hover {
+    background: linear-gradient(90deg, #e91e63e0, #b0003ac7);
+}
+
+
+/* Fade Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Enhanced Glow Border */
+input, .btn {
+    overflow: hidden;
+    /* border: 1px solid rgb(0 0 0 / 10%); */
+}
+
+input:focus, .btn:hover {
+    overflow: hidden;
+    /* border: 1px solid #00e1ff; */
+}
