@@ -94,7 +94,7 @@ Business = {
 #### Previews
 
 Billing Section:
-<img src="https://i.imgur.com/BNwAjB1.png">
+<img src="https://i.imgur.com/7rKZj5s.png">
 
 Paying Section ( Opening This UI To Billed Player ):
-<img src="https://i.imgur.com/s4P2W1G.png">
+<img src="https://i.imgur.com/SLs7Et4.png">
