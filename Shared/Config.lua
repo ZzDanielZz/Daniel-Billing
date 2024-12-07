@@ -31,7 +31,7 @@ Config = {
         ["store"] = {
             coords = vector3(374.0, -833.0, 29.0),
             jobs = {"shopkeeper"  -- Add More Jobs If You Want },
-            interaction = "access_store",  -- Interaction label
+            interaction = "[E] - To Access Bank Billing",  -- Interaction label
             UseBossMenu = false,
             Distance = 2, -- Change Only If You Use DrawText
         }
