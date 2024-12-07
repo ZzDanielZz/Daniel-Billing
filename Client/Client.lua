@@ -89,7 +89,7 @@ AddEventHandler('Daniel-Billing:openPaymentContainer', function(playerId, amount
 
     if playerId and amount then
         Debug("Player Tried To Give Invoice To Himself !", "ERROR")
-        if playerId ~= PlayerId() then -- Ensure the player is not the one issuing the bill
+        if playerId ~= PlayerId() then
             SetNuiFocus(true, true)
             SendNUIMessage({
                 type = "openPaymentContainer",
@@ -194,13 +194,13 @@ end)
 
 DrawText3D = function(x, y, z, text)
     local onScreen, _x, _y = World3dToScreen2d(x, y, z)
-    local scale = 0.35  -- Scale of the text
+    local scale = 0.35
 
     if onScreen then
         SetTextScale(scale, scale)
         SetTextFont(4)
         SetTextProportional(1)
-        SetTextColour(255, 255, 255, 255)  -- White text
+        SetTextColour(255, 255, 255, 255)
         SetTextEntry("STRING")
         AddTextComponentString(text)
         DrawText(_x, _y)
