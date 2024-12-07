@@ -23,14 +23,14 @@ Config = {
     Business = {
         ["bank"] = {
             coords = vector3(-1024.184, -2733.377, 13.757),
-            jobs = {"banker"},
+            jobs = {"banker" -- Add More Jobs If You Want },
             interaction = "[E] - To Access Bank Billing",  -- Interaction label
             UseBossMenu = false,
             Distance = 2, -- Change Only If You Use DrawText
         },
         ["store"] = {
             coords = vector3(374.0, -833.0, 29.0),
-            jobs = {"shopkeeper"},
+            jobs = {"shopkeeper"  -- Add More Jobs If You Want },
             interaction = "access_store",  -- Interaction label
             UseBossMenu = false,
             Distance = 2, -- Change Only If You Use DrawText
